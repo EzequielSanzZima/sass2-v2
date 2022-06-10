@@ -1,0 +1,448 @@
+/*Maps*/
+/*Header*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;1,100&display=swap");
+.topHeader {
+  background-color: #7D3C98;
+}
+
+.topHeader .iconoTelefono {
+  width: 32px;
+  height: 32px;
+}
+
+.navPaginas {
+  background-color: #8E44AD;
+}
+
+.navPaginas .logoHeader {
+  width: 120px;
+  height: 64px;
+}
+
+.navCentro {
+  padding: 0px 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .navCentro {
+    padding: 0px 15px;
+  }
+}
+
+.navCentro .nav-link {
+  color: white;
+}
+
+.navCentro .nav-link:hover {
+  color: #BB8FCE;
+}
+
+.navCentro .nav-link.active {
+  color: #c393d8;
+  text-decoration: underline;
+}
+
+/*Footer*/
+.fondoFooter {
+  padding-top: 10px;
+  background-color: #8E44AD;
+}
+
+.fondoFooter .navFooter {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  color: white;
+  padding: 0%;
+  margin: 0%;
+}
+
+.fondoFooter .navFooter:hover {
+  color: #BB8FCE;
+}
+
+.fondoFooter .logoFooter {
+  width: 128px;
+}
+
+.footerFinal {
+  background-color: #7D3C98;
+  color: white;
+}
+
+.animacionInformacionIndex, .divCartasContacto {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-name: parrafoEntraIzq;
+          animation-name: parrafoEntraIzq;
+}
+
+@-webkit-keyframes parrafoEntraIzq {
+  from {
+    -webkit-transform: translate(1000px, 0);
+            transform: translate(1000px, 0);
+  }
+  to {
+    -webkit-transform: translate(0px, 0);
+            transform: translate(0px, 0);
+  }
+}
+
+@keyframes parrafoEntraIzq {
+  from {
+    -webkit-transform: translate(1000px, 0);
+            transform: translate(1000px, 0);
+  }
+  to {
+    -webkit-transform: translate(0px, 0);
+            transform: translate(0px, 0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .animacionInformacionIndex .informacionIndex, .divCartasContacto .informacionIndex {
+    padding: 0px 0px 28px !important;
+  }
+}
+
+.animacionInformacionIndex .imagenInformacion, .divCartasContacto .imagenInformacion {
+  padding: 2px;
+}
+
+.animacionInformacionIndex .imagenInformacion .divTextoIntroduccion, .divCartasContacto .imagenInformacion .divTextoIntroduccion {
+  padding-left: 20px;
+}
+
+.animacionInformacionIndex .divTextoIntroduccion p, .divCartasContacto .divTextoIntroduccion p {
+  margin-bottom: 11px;
+}
+
+@media screen and (max-width: 768px) {
+  .animacionInformacionIndex .divTextoIntroduccion p, .divCartasContacto .divTextoIntroduccion p {
+    padding-top: px;
+  }
+}
+
+.textoIntroduccion {
+  /*Titulo Bienvenida*/
+  color: #c04ca7;
+}
+
+@media screen and (max-width: 768px) {
+  .textoIntroduccion {
+    padding-top: 16px;
+    margin-bottom: 0px;
+  }
+}
+
+.informacionIndex {
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .informacionIndex {
+    font-size: 14px;
+  }
+}
+
+.card h5 {
+  color: #072100;
+}
+
+.card-bodyIndex, .bodyCardContacto {
+  background-color: #C04CA7;
+  color: white;
+}
+
+.card-bodyIndex .cartaIndex, .bodyCardContacto .cartaIndex {
+  font-size: 0.9rem;
+  font-family: "Work Sans", sans-serif;
+  padding: 0px 20px;
+  padding-bottom: 20px;
+}
+
+.divCartasContacto {
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+}
+
+.bodyCardContacto {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+}
+
+.contactoCartas {
+  font-size: 0.9rem;
+  font-family: "Work Sans", sans-serif;
+  margin: 0px;
+}
+
+.bodyCardContacto a p {
+  margin: 0px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 5px auto;
+  outline-offset: -2px;
+}
+
+.comoLlego {
+  font-size: 0.9rem;
+}
+
+.fa-envelope:before, .fa-phone:before, .fa-map:before, .fa-clock-four:before, .fa-clock:before {
+  color: #4A235A;
+  padding-right: 5px;
+}
+
+.row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cartasContacto {
+    width: 60vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-img-top {
+    height: 150px;
+  }
+}
+
+.contactoTexto {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.95rem;
+  margin: 0px;
+}
+
+.contactoTelefonoEmail {
+  padding: 0px 5px 0px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .contactoTelefonoEmail {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    padding: 0px;
+    width: 100%;
+  }
+}
+
+.form-label {
+  margin-bottom: 0px;
+}
+
+.form-control:focus {
+  border-color: #c04ca7;
+  -webkit-box-shadow: 0 0 0 0.1rem #8f6687;
+          box-shadow: 0 0 0 0.1rem #8f6687;
+}
+
+/*Acordeon*/
+.animacionServicioDerecha {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-name: parrafoEntraIzq;
+          animation-name: parrafoEntraIzq;
+}
+
+@keyframes parrafoEntraIzq {
+  from {
+    -webkit-transform: translate(1000px, 0);
+            transform: translate(1000px, 0);
+  }
+  to {
+    -webkit-transform: translate(0px, 0);
+            transform: translate(0px, 0);
+  }
+}
+
+.animacionServicioDerecha .accordion-button {
+  /*Letras Sin abrir*/
+  color: #b82c99;
+}
+
+.accordion-button:not(.collapsed) {
+  /*Abierto*/
+  background-color: #fd9ffd;
+  color: white;
+  text-decoration: underline;
+}
+
+.letraServicioAcordeon {
+  font-size: 0.9rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+/*caja*/
+.animacionServicioIzquierda {
+  /*Servicio peluqueria*/
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-name: anmiServicio;
+          animation-name: anmiServicio;
+}
+
+@-webkit-keyframes anmiServicio {
+  from {
+    -webkit-transform: translate(-1000px, 0);
+            transform: translate(-1000px, 0);
+  }
+  to {
+    -webkit-transform: translate(0px, 0);
+            transform: translate(0px, 0);
+  }
+}
+
+@keyframes anmiServicio {
+  from {
+    -webkit-transform: translate(-1000px, 0);
+            transform: translate(-1000px, 0);
+  }
+  to {
+    -webkit-transform: translate(0px, 0);
+            transform: translate(0px, 0);
+  }
+}
+
+.animacionServicioIzquierda .imagenInformacionPeluqueria {
+  height: 40vh;
+}
+
+@media screen and (max-width: 768px) {
+  .animacionServicioIzquierda .imagenInformacionPeluqueria {
+    height: 330px;
+  }
+}
+
+.animacionServicioIzquierda .divServicioTexto, .animacionServicioIzquierda .textoQuienSomos ul li::marker, .textoQuienSomos ul .animacionServicioIzquierda li::marker {
+  font-size: 15px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .animacionServicioIzquierda .divServicioTexto, .animacionServicioIzquierda .textoQuienSomos ul li::marker, .textoQuienSomos ul .animacionServicioIzquierda li::marker {
+    padding: 15px 48px 5px 48px !important;
+  }
+}
+
+.animacionServicioIzquierda .divServicioTexto .divServicioTexto ul, .animacionServicioIzquierda .textoQuienSomos ul li::marker .divServicioTexto ul, .textoQuienSomos ul .animacionServicioIzquierda li::marker .divServicioTexto ul, .animacionServicioIzquierda .divServicioTexto .textoQuienSomos ul li::marker ul, .textoQuienSomos ul .animacionServicioIzquierda .divServicioTexto li::marker ul, .animacionServicioIzquierda .textoQuienSomos ul li::marker li::marker ul, .textoQuienSomos ul .animacionServicioIzquierda li::marker li::marker ul {
+  list-style-position: inside;
+}
+
+.letraQuienSomosTexto {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.textoQuienSomos {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.galeriaContainer img {
+  width: 100%;
+  height: 350px;
+}
+
+.galeriaContainer img:hover {
+  border: 5px solid #f7f7f7;
+}
+
+.galeriaContainer .col-lg-4 {
+  margin: 0px;
+  padding: 25px;
+}
+
+body {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+}
+
+.btnColor {
+  --bs-btn-bg: rgb(192, 76, 167);
+  --bs-btn-border-color: rgb(192, 76, 167);
+  --bs-btn-hover-border-color: rgb(150, 71, 167);
+  -webkit-transition: background-color 0.25s ease-out 25ms;
+  transition: background-color 0.25s ease-out 25ms;
+}
+
+.btn:hover {
+  color: #9647a7;
+  background-color: white;
+}
+
+.whatsapp {
+  position: fixed;
+  z-index: 1000;
+  bottom: 10px;
+  right: 10px;
+  width: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .whatsapp {
+    display: none;
+  }
+}
+
+.titulo {
+  text-align: center;
+  padding-top: 10px;
+  font-family: 'Work Sans', sans-serif;
+  color: #c04ca7;
+}
+
+.animacionTitulo {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-name: animTitulo;
+          animation-name: animTitulo;
+}
+
+@-webkit-keyframes animTitulo {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 40px;
+  }
+}
+
+@keyframes animTitulo {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 40px;
+  }
+}
+
+::marker {
+  color: #c04ca7;
+  font-size: 10px;
+}
+/*# sourceMappingURL=style.css.map */

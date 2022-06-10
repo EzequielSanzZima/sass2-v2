@@ -1,0 +1,87 @@
+
+
+.divCartasContacto{
+  @extend .animacionInformacionIndex;
+  animation-duration: 0.2s;
+}
+
+.bodyCardContacto {
+    @extend .card-bodyIndex;
+    text-align: center;
+    font-family: map-get($textoParrafo, family);
+}
+    
+
+
+.contactoCartas{
+    font-size: map-get($textoParrafo, size);
+    font-family: map-get($textoParrafo, family);
+    margin: 0px;
+  
+}
+
+.bodyCardContacto a p{
+  margin: 0px;
+}
+a {
+  color: white;
+  text-decoration: none;
+    &:hover, &:focus {
+    color: #23527c;
+    text-decoration: underline;
+    }
+      &:focus{
+        outline: 5px auto;
+        outline-offset: -2px;
+      }
+}
+.comoLlego{
+  font-size: map-get($textoParrafo, size);
+}
+
+
+.fa-envelope:before, .fa-phone:before, .fa-map:before, .fa-clock-four:before, .fa-clock:before{ 
+  color: #4A235A;
+  padding-right: 5px;
+}
+
+
+.row{
+  justify-content: center;
+}
+.cartasContacto{
+  @include tablet{
+    width: 60vh;
+  }
+}
+.card-img-top{
+  @include tablet{
+    height: 150px;
+  }
+}
+
+
+.contactoTexto {
+  font-family: map-get($textoParrafo, family);
+  font-size: 0.95rem;
+  margin: 0px;
+}
+
+.contactoTelefonoEmail{
+  padding: 0px 5px 0px 0px;
+  @include tablet{
+    flex-direction: column!important;
+    padding: 0px;
+    width: 100%;
+  }
+}
+
+.form-label{
+  margin-bottom: 0px;
+}
+
+.form-control:focus{
+  border-color: rgb(192, 76, 167);
+  box-shadow: 0 0 0 0.10rem rgb(143, 102, 135);
+}
+  

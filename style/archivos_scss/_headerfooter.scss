@@ -1,0 +1,78 @@
+
+/*Header*/
+.topHeader{
+    background-color: $colorTopSub;
+
+        .iconoTelefono{
+            width: 32px;
+            height: 32px;
+        }
+}
+
+
+
+.navPaginas{
+    background-color: $colorHeaderFooter;
+
+    .logoHeader{
+        width: 120px;
+        height:64px;
+        
+    }
+}
+
+.navCentro{
+    padding: 0px 60px;
+        @include tablet{
+            padding: 0px 15px;
+        }
+    .nav-link{
+        color: white;
+        
+        &:hover{
+            color: #BB8FCE;
+        }       
+    }
+    .nav-link.active{
+        color: #c393d8;
+        text-decoration: underline;
+    } 
+}
+
+
+
+/*Footer*/
+.fondoFooter{
+    padding-top: 10px;
+    background-color: $colorHeaderFooter;
+    
+    .navFooter{
+        display: block;
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+        font-size: var(--bs-nav-link-font-size);
+        font-weight: var(--bs-nav-link-font-weight);
+        color: var(--bs-nav-link-color);
+        text-decoration: none;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    
+        color:white;
+        padding: 0%;
+        margin: 0%;
+
+        &:hover{
+            color:#BB8FCE;
+            
+        }
+    }
+    
+    .logoFooter{
+        width: 128px;
+    }
+}
+
+.footerFinal{
+        background-color: $colorTopSub;
+        color: white;
+
+}
+

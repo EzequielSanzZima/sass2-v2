@@ -1,0 +1,72 @@
+
+/*Acordeon*/
+
+.animacionServicioDerecha{     
+    animation-duration: 0.4s;
+    animation-name: parrafoEntraIzq;
+    @keyframes parrafoEntraIzq {
+        from { transform: translate(1000px,  0); }
+        to   { transform: translate(-0px, 0); }    
+    }
+    .accordion-button{ /*Letras Sin abrir*/
+        color: rgb(184, 44, 153);   
+    }
+}
+
+.accordion-button:not(.collapsed){ /*Abierto*/
+    background-color: rgb(253, 159, 253);
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.letraServicioAcordeon{
+    font-size: map-get($textoParrafo, size);
+    font-family: map-get($textoParrafo, family);
+}
+
+
+/*caja*/
+
+.animacionServicioIzquierda{ /*Servicio peluqueria*/
+    animation-duration: 0.4s;
+    animation-name: anmiServicio;
+    @keyframes anmiServicio {
+        from { transform: translate(-1000px,  0); }
+        to   { transform: translate(-0px, 0); }    
+    }
+
+    .imagenInformacionPeluqueria{
+        height: 40vh;
+            @include tablet{
+                height: 330px;
+            }
+    }
+    .divServicioTexto{ 
+        font-size: 15px;
+        font-family: 'Work Sans', sans-serif;
+            @include tablet{
+                padding: 15px 48px 5px 48px!important;
+            }
+
+        .divServicioTexto ul {
+            list-style-position: inside;      
+            
+        }
+        
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

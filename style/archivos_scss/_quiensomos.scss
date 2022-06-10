@@ -1,0 +1,13 @@
+.letraQuienSomosTexto{
+    font-size: 14px;
+    font-family: map-get($textoParrafo, family);
+}
+
+.textoQuienSomos{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.textoQuienSomos ul li::marker{
+    @extend .divServicioTexto;
+}
